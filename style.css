@@ -1,0 +1,91 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    max-width: 700px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15vh auto;
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.element {
+    padding: 35px 50px;
+}
+
+.sec-1 {
+    background-color: white;
+    grid-column: span 2;
+}
+
+.sec-1 h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+.sec-1 h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.sec-1 p {
+    color: hsl(218, 22%, 67%);
+}
+
+.sec-2 {
+    background-color: hsl(179, 62%, 43%);
+}
+
+#dollar {
+    font-size: 2em;
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+#info {
+    opacity: 0.7;
+}
+
+.sec-2 p {
+    opacity: .9;
+    padding-bottom: .5em;
+}
+
+.sec-2 button {
+    width: 100%;
+    padding: 12px;
+    font-family: 'Karla', sans-serif;
+    font-size: large;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.sec-3 {
+    background-color: hsl(179, 47%, 52%);
+
+}
+
+.sec-3 p {
+    margin: 0;
+    line-height: 1.4;
+    opacity: .9;
+
+}
+
+@media screen and (max-width:720px) {
+    .container {
+        margin: 1vh auto;
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+    }
+}
